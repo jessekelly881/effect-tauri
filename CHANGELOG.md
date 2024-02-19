@@ -1,5 +1,11 @@
 # @kellyjesse881/empty
 
+## 0.0.2
+
+### Patch Changes
+
+- 1d64c68: init
+
 ## 0.0.4
 
 ### Patch Changes

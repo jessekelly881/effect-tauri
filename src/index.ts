@@ -24,16 +24,17 @@ export const listen = (name: string) =>
 			Effect.gen(function* (_) {
 				const scope = yield* _(Scope.Scope);
 				const res = yield* _(
-					Effect.tryPromise(() =>
-						Event.listen(name, (event) =>
-							emit(
-								Effect.succeed(
-									Chunk.of(event as Event.Event<unknown>)
+					Effect.tryPromise({
+						try: () =>
+							Event.listen(name, (event) =>
+								emit(
+									Effect.succeed(
+										Chunk.of(event as Event.Event<unknown>)
+									)
 								)
-							)
-						)
-					),
-					() => new TauriError({ message: "" })
+							),
+						catch: () => new TauriError({ message: "" })
+					})
 				);
 
 				yield* _(Scope.addFinalizer(scope, Effect.succeed(res)));

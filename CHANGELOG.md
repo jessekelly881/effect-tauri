@@ -1,5 +1,11 @@
 # @kellyjesse881/empty
 
+## 0.0.5
+
+### Patch Changes
+
+- 4b7a1af: removed postinstall script
+
 ## 0.0.4
 
 ### Patch Changes

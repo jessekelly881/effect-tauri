@@ -4,6 +4,14 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  '@tauri-apps/api':
+    specifier: ^1.5.3
+    version: 1.5.3
+  effect:
+    specifier: ^2.3.7
+    version: 2.3.7
+
 devDependencies:
   '@changesets/cli':
     specifier: ^2.26.0
@@ -280,7 +288,7 @@ packages:
     dependencies:
       doctrine: 3.0.0
       glob: 10.3.10
-      markdown-toc: git@github.com+effect-ts/markdown-toc/4bfeb0f140105440ea0d12df2fa23199cc3ec1d5
+      markdown-toc: github.com/effect-ts/markdown-toc/4bfeb0f140105440ea0d12df2fa23199cc3ec1d5
       prettier: 3.1.1
       tsx: 4.7.1
       typescript: 5.3.3
@@ -922,6 +930,11 @@ packages:
   /@sinclair/typebox@0.27.8:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
     dev: true
+
+  /@tauri-apps/api@1.5.3:
+    resolution: {integrity: sha512-zxnDjHHKjOsrIzZm6nO5Xapb/BxqUq1tc7cGkFXsFkGTsSWgCPH1D8mm0XS9weJY2OaR73I3k3S+b7eSzJDfqA==}
+    engines: {node: '>= 14.6.0', npm: '>= 6.6.0', yarn: '>= 1.19.1'}
+    dev: false
 
   /@types/estree@1.0.5:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
@@ -1873,6 +1886,10 @@ packages:
   /eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
+
+  /effect@2.3.7:
+    resolution: {integrity: sha512-hFiMy3mX7h0AlCjzZjZCnVlJD6SBePBmkg9IKUAiEEzmH68z0ZBVtiwNhukmaEWxgDSG20lxA1M4Bi1yR3pkhQ==}
+    dev: false
 
   /emoji-regex@10.3.0:
     resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}
@@ -5257,8 +5274,8 @@ packages:
     engines: {node: '>=12.20'}
     dev: true
 
-  git@github.com+effect-ts/markdown-toc/4bfeb0f140105440ea0d12df2fa23199cc3ec1d5:
-    resolution: {commit: 4bfeb0f140105440ea0d12df2fa23199cc3ec1d5, repo: git@github.com:effect-ts/markdown-toc.git, type: git}
+  github.com/effect-ts/markdown-toc/4bfeb0f140105440ea0d12df2fa23199cc3ec1d5:
+    resolution: {tarball: https://codeload.github.com/effect-ts/markdown-toc/tar.gz/4bfeb0f140105440ea0d12df2fa23199cc3ec1d5}
     name: markdown-toc
     version: 1.2.0
     engines: {node: '>=0.10.0'}

@@ -1,0 +1,5 @@
+---
+"effect-tauri": patch
+---
+
+init

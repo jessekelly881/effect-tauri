@@ -1,5 +1,11 @@
 # @kellyjesse881/empty
 
+## 0.0.4
+
+### Patch Changes
+
+- 358fed2: fixed typo in listen fn
+
 ## 0.0.3
 
 ### Patch Changes

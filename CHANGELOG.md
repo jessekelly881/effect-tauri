@@ -1,5 +1,11 @@
 # @kellyjesse881/empty
 
+## 0.0.3
+
+### Patch Changes
+
+- 8f3a31c: updated nodeignore
+
 ## 0.0.2
 
 ### Patch Changes

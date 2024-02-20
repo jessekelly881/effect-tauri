@@ -44,7 +44,7 @@ export const listen = (name: string) =>
 /**
  * @since 1.0.0
  */
-export const invoke = <T extends Api.InvokeArgs>(cmd: string, payload: T) =>
+export const invoke = <T extends Api.InvokeArgs>(cmd: string, payload?: T) =>
 	Effect.tryPromise({
 		try: () => Api.invoke(cmd, payload),
 		catch: () => new TauriError({ message: "" })

@@ -5,9 +5,17 @@ import { invoke } from "../src";
 
 describe("tauri", () => {
 	it("invoke", async () => {
-		mockIPC(() => {});
-		const spy = vi.spyOn(window, "__TAURI_IPC__");
-		await Effect.runPromise(invoke("test"));
-		expect(spy).toHaveBeenCalledOnce();
+		const called = vi.fn();
+
+		// @ts-expect-error Error
+		mockIPC((cmd, args) => {
+		if(cmd === "called") {
+			called(args)
+			}
+		})
+
+		await Effect.runPromise(invoke("called", { a: "a" }));
+		expect(called).toHaveBeenCalledOnce();
+		expect(called).toHaveBeenLastCalledWith({ a: "a" });
 	});
 });

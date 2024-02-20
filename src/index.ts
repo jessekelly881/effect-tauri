@@ -1,7 +1,7 @@
 /**
  * @since 1.0.0
  */
-import * as Api from "@tauri-apps/api";
+import * as Api from "@tauri-apps/api/core";
 import * as Event from "@tauri-apps/api/event";
 
 import { Chunk, Data, Effect, Scope, Stream, StreamEmit } from "effect";
@@ -44,9 +44,9 @@ export const listen = (name: string) =>
 /**
  * @since 1.0.0
  */
-export const invoke = (cmd: string) =>
+export const invoke = <T extends Api.InvokeArgs>(cmd: string, payload: T) =>
 	Effect.tryPromise({
-		try: () => Api.invoke(cmd),
+		try: () => Api.invoke(cmd, payload),
 		catch: () => new TauriError({ message: "" })
 	});
 

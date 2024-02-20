@@ -30,7 +30,6 @@
   "license": "MIT",
   "devDependencies": {
     "@changesets/cli": "^2.26.0",
-    "@effect/docgen": "^0.3.6",
     "@fast-check/vitest": "^0.1.0",
     "@types/node": "^20.8.4",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
@@ -48,7 +47,7 @@
     "vitest": "^1.0.1"
   },
   "dependencies": {
-    "@tauri-apps/api": "^1.5.3",
+    "@tauri-apps/api": "^2.0.0-beta.1",
     "effect": "^2.3.7"
   }
 }

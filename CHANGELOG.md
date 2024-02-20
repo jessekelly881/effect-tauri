@@ -1,5 +1,11 @@
 # @kellyjesse881/empty
 
+## 0.0.6
+
+### Patch Changes
+
+- d779e6a: updated tauri packages
+
 ## 0.0.5
 
 ### Patch Changes

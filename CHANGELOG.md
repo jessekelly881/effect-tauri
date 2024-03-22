@@ -1,5 +1,11 @@
 # @kellyjesse881/empty
 
+## 0.0.7
+
+### Patch Changes
+
+- 60874a7: make invoke payload optional
+
 ## 0.0.6
 
 ### Patch Changes

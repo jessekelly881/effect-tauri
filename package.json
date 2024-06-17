@@ -35,8 +35,8 @@
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
     "bun": "^1.0.7",
-    "eslint": "^8.51.0",
-    "eslint-plugin-deprecation": "^2.0.0",
+    "eslint": "^9.5.0",
+    "eslint-plugin-deprecation": "^3.0.0",
     "fast-check": "^3.14.0",
     "husky": "^9.0.7",
     "jsdom": "^24.0.0",
@@ -47,8 +47,8 @@
     "vitest": "^1.0.1"
   },
   "dependencies": {
-    "@effect/docgen": "^0.3.8",
+    "@effect/docgen": "^0.4.3",
     "@tauri-apps/api": "^2.0.0-beta.1",
-    "effect": "^2.3.7"
+    "effect": "^3.3.4"
   }
 }
